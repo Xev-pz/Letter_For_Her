@@ -1,0 +1,72 @@
+body {
+  background-color: #ffc0cb;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: palevioletred;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+}
+
+.card {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card.active {
+  display: flex;
+}
+
+
+img {
+  width: 200px;
+  max-width: 100%;
+  margin: 15px 0;
+}
+
+button {
+  background: #e6739f;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+  display: block;
+  margin: 15px auto 0;
+}
+.choice-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#noBtn {
+  position: relative;
+}
+.no-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: palevioletred;
+}
+
+#yesBtn {
+  transition: transform 0.3s ease;
+}
+
+
+
