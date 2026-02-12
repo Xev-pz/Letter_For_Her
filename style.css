@@ -67,6 +67,11 @@ button {
 #yesBtn {
   transition: transform 0.3s ease;
 }
+audio {
+  margin-top: 15px;
+  width: 100%;
+}
+
 
 
 
