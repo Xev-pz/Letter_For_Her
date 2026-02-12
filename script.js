@@ -1,3 +1,9 @@
+const song = document.getElementById("loveSong");
+
+song.addEventListener("loadedmetadata", () => {
+  song.currentTime = 72; // start at 1:12
+});
+
 let currentCard = 0;
 const cards = document.querySelectorAll(".card");
 
@@ -7,8 +13,22 @@ function nextCard() {
 
   if (currentCard < cards.length) {
     cards[currentCard].classList.add("active");
+
+    
+    if (currentCard === cards.length - 1) {
+      const song = document.getElementById("loveSong");
+
+      if (song) {
+        song.currentTime = 119; // 
+        song.play().catch(() => {
+          console.log("Autoplay blocked by browser");
+        });
+      }
+    }
   }
 }
+
+
 
 let noCount = 0;
 
@@ -51,10 +71,4 @@ function noClicked() {
   }
 }
 
-function yesClicked() {
-  document.getElementById("askCard").innerHTML = `
-    <h1>Yay! 💕</h1>
-    <p>I have something for you but i wanna give it in person ˶˃ ᵕ ˂˶ </p>
-    <img src="https://media.tenor.com/jkVthFR60pgAAAAm/feliz-cumplea%C3%B1os.webp">
-  `;
-}
+
