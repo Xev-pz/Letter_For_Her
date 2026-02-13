@@ -1,7 +1,7 @@
 const song = document.getElementById("loveSong");
 
 song.addEventListener("loadedmetadata", () => {
-  song.currentTime = 146; 
+  song.currentTime = 74; 
 });
 
 let currentCard = 0;
@@ -70,5 +70,6 @@ function noClicked() {
     noText.textContent = "Yes na lang ang choice 😏";
   }
 }
+
 
 
