@@ -1,7 +1,7 @@
 const song = document.getElementById("loveSong");
 
 song.addEventListener("loadedmetadata", () => {
-  song.currentTime = 72; // start at 1:12
+  song.currentTime = 146; 
 });
 
 let currentCard = 0;
@@ -19,7 +19,7 @@ function nextCard() {
       const song = document.getElementById("loveSong");
 
       if (song) {
-        song.currentTime = 119; // 
+        song.currentTime = 146; 
         song.play().catch(() => {
           console.log("Autoplay blocked by browser");
         });
